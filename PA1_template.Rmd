@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r LoadData}
 ##Load the data
-activity = read.csv("C:/Users/viyeh/Downloads/repdata%2Fdata%2Factivity/activity.csv")
+activity = read.csv("C:/Users/dothackrpg/Downloads/repdata%2Fdata%2Factivity/activity.csv")
 
 ##Process/transform the data (if necessary) into a format suitable for your analysis
 totalSteps <- aggregate(steps ~ date, data = activity, sum, na.rm = TRUE)
@@ -91,8 +91,8 @@ hist(total.steps.per.days$steps, col = "blue", xlab = "Total Number of Steps",
 ## Calculate and report the mean and median total number of steps taken per day.
 showMean <- mean(total.steps.per.days$steps)
 showMedian <- median(total.steps.per.days$steps)
-  ##Mean total number of steps taken per day is 1.0766 × 104
-  ##Median total number of steps taken per day is 1.0766 × 104
+  ##Mean total number of steps taken per day is 1.0766 Ã— 104
+  ##Median total number of steps taken per day is 1.0766 Ã— 104
 ```
 
 ```{r WeekdayWeekendFactor}
